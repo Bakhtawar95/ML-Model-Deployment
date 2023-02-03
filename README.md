@@ -4,8 +4,9 @@ This repository provides an example of:
 - MLflow logging & tracking 
 - and model deployment in the form of a Flask REST API as well as in batch mode.
 
-## Notebooks   [stress_detection_train.ipynb](/stress_detection_train.ipynb)
-               [stress_detection_deploy.ipynb](/stress_detection_deploy.ipynb)
+## Notebooks   
+          [stress_detection_train.ipynb](/stress_detection_train.ipynb)
+          [stress_detection_deploy.ipynb](/stress_detection_deploy.ipynb)
              
 ## Project Structure
 
