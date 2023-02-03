@@ -6,8 +6,8 @@ This repository provides an example of:
 
 # Notebooks   
           
-  [stress_detection_train.ipynb](/stress_detection_train.ipynb)
-  [stress_detection_deploy.ipynb](/stress_detection_deploy.ipynb)
+ - [stress_detection_train.ipynb](/stress_detection_train.ipynb)
+ - [stress_detection_deploy.ipynb](/stress_detection_deploy.ipynb)
              
 ## Project Structure
 
