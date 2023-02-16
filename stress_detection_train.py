@@ -26,8 +26,8 @@ from mlflow.entities import ViewType
 
 MLFLOW_TRACKING_URI="sqlite:///mlflow.db"
 mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
-mlflow.set_experiment("stress-level-detection")
-model_name="stress-level-prediction"
+mlflow.set_experiment("stress-levels")
+model_name="stress-level-model"
 client = MlflowClient(tracking_uri=MLFLOW_TRACKING_URI)
 
 
@@ -87,7 +87,7 @@ def training_logging(X_train,y_train,X_test,y_test):
 
 def select_model():
     best_run = client.search_runs(
-        experiment_ids='12',
+        experiment_ids='1',
         filter_string="metrics.rmse<0.01",
         run_view_type=ViewType.ACTIVE_ONLY,
         max_results=1,
