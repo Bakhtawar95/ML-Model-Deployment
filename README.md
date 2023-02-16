@@ -27,7 +27,37 @@ basis of RMSE (RMSE<0.05). In this way, one model is chosen. This model is then 
 - [templates/index.html](/templates/index.html)
                     This HTML template serves as a GUI to enter the input details and displays the corresponding predicted stress level.
                     
+# Steps to build this project:
 
+1. Copy all the project files and open VScode terminal in project drectory.
+2. Install MLflow using:
+
+      pip install mlflow
+       
+3. Run the model training script:
+
+      python stress_detection_train.py
+      
+ 4. By default, wherever you run the program, thr tracking API writes data into files in a local 
+    ./mlruns directory. You can then run MLflow's Tracking UI:
+    
+       mlflow ui --backend-store-uri sqlite:///mlflow.db
+       
+    and view it at http://localhost:5000
+    
+ 5. Then run:
+
+       python API.py
+       
+     and view the Flask app at http://127.0.0.1:8080
+ 
+ 6. To generate the predictions in .csv file, run in batch mode using:
+
+       python stress_detection_deploy.py
+       
+     the output file will be located in ./output/stress_output.csv
+     
+ 
 
 
 
