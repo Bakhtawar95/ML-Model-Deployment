@@ -49,7 +49,7 @@ def apply_model(input_file,output_file,model_name,stage):
 def run():
     input_file='./data/SaYoPillow.csv'
     output_file='./output/stress_output.csv'
-    model_name="stress-levels-prediction"
+    model_name="stress-level-model"
     stage="Production"
     apply_model(input_file,output_file,model_name,stage)
     print(f'Finished') 
