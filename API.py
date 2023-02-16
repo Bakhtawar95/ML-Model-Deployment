@@ -4,7 +4,7 @@ import mlflow
 
 app = Flask(__name__)
 
-model_name="stress-levels-prediction"
+model_name="stress-level-model"
 stage="Production"
 MLFLOW_TRACKING_URI = "sqlite:///mlflow.db"
 mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
