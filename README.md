@@ -27,7 +27,7 @@ basis of RMSE (RMSE<0.05). In this way, one model is chosen. This model is then 
 - [templates/index.html](/templates/index.html)
                     This HTML template serves as a GUI to enter the input details and displays the corresponding predicted stress level.
                     
-# Steps to build this project:
+# Steps to build the project:
 
 1. Copy all the project files and open VScode terminal in project drectory.
 2. Install MLflow using:
