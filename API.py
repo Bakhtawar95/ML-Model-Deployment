@@ -4,7 +4,7 @@ import mlflow
 
 app = Flask(__name__)
 
-model_name="stress-level-model"
+model_name="stress-level"
 stage="Production"
 MLFLOW_TRACKING_URI = "sqlite:///mlflow.db"
 mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
@@ -23,5 +23,10 @@ def predict():
     output=prediction[0]
     return render_template('index.html', prediction_text='The predicted stress level of the human is {}'.format(output))
 
+
+
+#if __name__ == "__main__":
+    #app.run(debug=True)
+    
 if __name__ == "__main__":
     app.run(host="0.0.0.0",port="8080")
